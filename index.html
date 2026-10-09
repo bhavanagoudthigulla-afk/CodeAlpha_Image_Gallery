@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Pixel<span>Gallery.</span></h1>
+        <p>Discover beautiful moments around the world</p>
+    </header>
+
+    <main class="container">
+        <div class="filters">
+            <button class="filter active" data-category="all">All Photos</button>
+            <button class="filter" data-category="nature">Nature</button>
+            <button class="filter" data-category="city">Architecture</button>
+            <button class="filter" data-category="animals">Wildlife</button>
+        </div>
+
+        <section class="gallery" id="gallery">
+            <article class="photo" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900" alt="Mountain lake">
+                <div class="caption"><h3>Mountain Escape</h3><p>Nature Collection</p></div>
+            </article>
+
+            <article class="photo" data-category="city">
+                <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=900" alt="Modern architecture">
+                <div class="caption"><h3>Urban Dreams</h3><p>Architecture Collection</p></div>
+            </article>
+
+            <article class="photo" data-category="animals">
+                <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=900" alt="Wild animal">
+                <div class="caption"><h3>Wild Beauty</h3><p>Wildlife Collection</p></div>
+            </article>
+
+            <article class="photo" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900" alt="Sunlight in forest">
+                <div class="caption"><h3>Into the Forest</h3><p>Nature Collection</p></div>
+            </article>
+
+            <article class="photo" data-category="city">
+                <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=900" alt="City at night">
+                <div class="caption"><h3>City Lights</h3><p>Architecture Collection</p></div>
+            </article>
+
+            <article class="photo" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=900" alt="Golden sunrise">
+                <div class="caption"><h3>Golden Morning</h3><p>Nature Collection</p></div>
+            </article>
+
+            <article class="photo" data-category="animals">
+                <img src="https://images.unsplash.com/photo-1551969014-7d2c4cddf0b6?w=900" alt="Wildlife in nature">
+                <div class="caption"><h3>Nature's Friends</h3><p>Wildlife Collection</p></div>
+            </article>
+
+            <article class="photo" data-category="city">
+                <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=900" alt="Geometric building">
+                <div class="caption"><h3>Modern Wonders</h3><p>Architecture Collection</p></div>
+            </article>
+
+            <article class="photo" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900" alt="Scenic landscape">
+                <div class="caption"><h3>Open Horizons</h3><p>Nature Collection</p></div>
+            </article>
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <button class="close" id="close" aria-label="Close">&times;</button>
+        <button class="nav prev" id="prev" aria-label="Previous image">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Selected gallery image">
+            <p id="lightbox-caption"></p>
+        </div>
+        <button class="nav next" id="next" aria-label="Next image">&#10095;</button>
+        <p class="counter" id="counter"></p>
+    </div>
+
+    <footer>© 2026 PixelGallery | Crafted with creativity ✨</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
